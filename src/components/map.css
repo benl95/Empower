@@ -5,6 +5,7 @@ svg {
 
 svg .province:hover {
 	stroke: white;
-	stroke-width: 1px;
+	stroke-width: 1.5px;
 	cursor: pointer;
+	fill: #afb1af;
 }
