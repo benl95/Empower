@@ -3,7 +3,7 @@ svg {
 	padding: 3rem 3rem 3rem 3rem;
 }
 
-svg .province:hover {
+svg .municipality:hover {
 	stroke: white;
 	stroke-width: 1.5px;
 	cursor: pointer;
