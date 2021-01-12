@@ -26,7 +26,10 @@ class Map extends React.Component {
 			.data(data.features)
 			.join('path')
 			.attr('class', 'province')
-			.attr('d', (feature) => pathGenerator(feature));
+			.attr('fill', '#C6F4C6')
+			.attr('d', (feature) => pathGenerator(feature))
+			.append('title')
+			.text((d) => d.properties.statnaam);
 	}
 
 	render() {
