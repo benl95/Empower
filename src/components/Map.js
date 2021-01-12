@@ -1,5 +1,6 @@
 import React from 'react';
 import { geoMercator, geoPath, select } from 'd3';
+import './map.css';
 
 class Map extends React.Component {
 	constructor(props) {
@@ -21,16 +22,21 @@ class Map extends React.Component {
 		const projection = geoMercator().fitSize([width, height], data);
 		const pathGenerator = geoPath().projection(projection);
 
-		svg.selectAll('.provinces')
+		svg.selectAll('.province')
 			.data(data.features)
 			.join('path')
-			.attr('class', 'provinces')
-			.attr('fill', 'black')
+			.attr('class', 'province')
 			.attr('d', (feature) => pathGenerator(feature));
 	}
 
 	render() {
-		return <svg ref={this.myRef} style={{ overflow: 'visible' }}></svg>;
+		return (
+			<svg
+				ref={this.myRef}
+				width={this.props.width}
+				height={this.props.height}
+			></svg>
+		);
 	}
 }
 
