@@ -1,0 +1,5 @@
+svg .province:hover {
+	stroke: white;
+	stroke-width: 1px;
+	cursor: pointer;
+}
