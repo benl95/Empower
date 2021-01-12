@@ -1,3 +1,8 @@
+svg {
+	background-color: #edf5fd;
+	padding: 3rem 3rem 3rem 3rem;
+}
+
 svg .province:hover {
 	stroke: white;
 	stroke-width: 1px;
