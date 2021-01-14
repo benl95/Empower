@@ -13,26 +13,27 @@
 	height: 5.5rem;
 	box-shadow: 0px 3px 6px -6px #000000;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .navigationContainer ul {
-	width: 50%;
+	width: 74%;
 	height: inherit;
 	list-style: none;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 }
 
 .navigationContainer li {
 	height: 2rem;
+	margin: 0 2em 0 2em;
 }
 
 .navigationContainer button {
 	text-decoration: none;
 	color: #000000;
-	font-size: 1.563rem;
+	font-size: 16px;
 	font-family: 'Montserrat';
 	font-weight: 400;
 	background-color: #ffffff;
