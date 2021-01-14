@@ -1,6 +1,13 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
 svg {
 	background-color: #edf5fd;
 	padding: 3rem 3rem 3rem 3rem;
+	margin-top: 0.1rem;
 }
 
 svg .municipality:hover {
@@ -8,4 +15,41 @@ svg .municipality:hover {
 	stroke-width: 1.5px;
 	cursor: pointer;
 	fill: #afb1af;
+}
+
+.buttonContainer {
+	width: 230px;
+	height: 83px;
+	border-radius: 502px;
+	position: absolute;
+	left: 815px;
+	top: 110px;
+	background-color: #ffffff;
+	box-shadow: 0px 3px 6px -6px #000000;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 1rem 0 1rem;
+}
+
+.buttonContainer button {
+	background-color: Transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+	font-family: 'Montserrat';
+	font-size: 12px;
+	font-weight: 400;
+	height: 50%;
+	width: 80%;
+}
+
+.buttonContainer button:focus {
+	background-color: #06e520;
+	color: #ffffff;
+	border-radius: 25px;
+	width: 70%;
+	padding: 0 1rem 0 1rem;
 }
