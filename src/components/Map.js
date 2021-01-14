@@ -12,6 +12,7 @@ class Map extends React.Component {
 
 	componentDidMount() {
 		this.renderMap();
+		this.defaultView.focus();
 	}
 
 	componentDidUpdate() {
@@ -44,7 +45,13 @@ class Map extends React.Component {
 		return (
 			<div className="mapContainer">
 				<div className="buttonContainer">
-					<button onClick={() => this.setState({ currentData: 'main' })}>
+					<button
+						ref={(defaultFocus) => {
+							this.defaultView = defaultFocus;
+						}}
+						id="municipalityButton"
+						onClick={() => this.setState({ currentData: 'main' })}
+					>
 						{this.props.FirstButton}
 					</button>
 					<button onClick={() => this.setState({ currentData: 'minor' })}>
