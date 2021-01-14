@@ -9,7 +9,7 @@ import SideBar from './SideBar';
 class App extends React.Component {
 	render() {
 		return (
-			<div className="container">
+			<div className="mainContainer">
 				<Navigation />
 				<Map
 					width={870}
@@ -19,6 +19,7 @@ class App extends React.Component {
 					MainData={municipalityData}
 					MinorData={provinceData}
 				/>
+				<SideBar />
 			</div>
 		);
 	}
