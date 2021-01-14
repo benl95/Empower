@@ -4,15 +4,16 @@ import municipalityData from '../data/municipalities.geo.json';
 import provinceData from '../data/provinces.geo.json';
 import Map from './Map';
 import Navigation from './Navigation';
+import SideBar from './SideBar';
 
 class App extends React.Component {
 	render() {
 		return (
-			<div>
+			<div className="container">
 				<Navigation />
 				<Map
-					width={900}
-					height={600}
+					width={870}
+					height={630}
 					FirstButton="Municipalities"
 					SecondButton="Provinces"
 					MainData={municipalityData}
