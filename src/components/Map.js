@@ -42,8 +42,8 @@ class Map extends React.Component {
 
 	render() {
 		return (
-			<div className="container">
-				<div>
+			<div className="mapContainer">
+				<div className="buttonContainer">
 					<button onClick={() => this.setState({ currentData: 'main' })}>
 						{this.props.FirstButton}
 					</button>
