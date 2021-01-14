@@ -29,12 +29,14 @@
 	height: 2rem;
 }
 
-.navigationContainer a {
+.navigationContainer button {
 	text-decoration: none;
 	color: #000000;
 	font-size: 1.563rem;
 	font-family: 'Montserrat';
 	font-weight: 400;
+	background-color: #ffffff;
+	outline: none;
 }
 
 .active {
