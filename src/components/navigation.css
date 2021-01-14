@@ -40,7 +40,7 @@
 	outline: none;
 }
 
-.active {
+.navigationContainer button:focus {
 	color: #06e520;
 	border-bottom: 5px solid #06e520;
 	font-weight: 700;

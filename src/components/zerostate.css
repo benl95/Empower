@@ -1,0 +1,22 @@
+h1,
+h2 {
+	text-align: center;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 24px;
+}
+
+h1 {
+	padding-top: 3rem;
+}
+
+p {
+	text-align: center;
+	font-size: 16px;
+	font-family: 'Montserrat';
+	margin: 1rem 0 1rem 0;
+}
+
+strong {
+	color: #06e520;
+}
