@@ -8,21 +8,30 @@ class Navigation extends React.Component {
 	}
 
 	render() {
-		console.log(this.state.active);
 		return (
 			<div className="navigationContainer">
 				<ul className="menuItemsContainer">
-					<li
-						className={this.state.active ? 'active' : 'off'}
-						onClick={() => this.setState({ active: !this.state.active })}
-					>
-						<a href="#">Home</a>
+					<li>
+						<button
+							className={this.state.active ? 'active' : 'off'}
+							onClick={() =>
+								this.setState({ active: !this.state.active })
+							}
+							href="#"
+						>
+							Home
+						</button>
 					</li>
-					<li
-						className={this.state.active ? 'active' : 'off'}
-						onClick={() => this.setState({ active: !this.state.active })}
-					>
-						<a href="#">Tips</a>
+					<li>
+						<button
+							className={this.state.active ? 'active' : 'off'}
+							onClick={() =>
+								this.setState({ active: !this.state.active })
+							}
+							href="#"
+						>
+							Tips
+						</button>
 					</li>
 				</ul>
 			</div>
