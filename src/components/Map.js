@@ -25,6 +25,7 @@ class Map extends React.Component {
 			this.state.currentData === 'main'
 				? this.props.MainData
 				: this.props.MinorData;
+		const productionData = this.props.ProductionData;
 		const width = this.props.width;
 		const height = this.props.height;
 
@@ -35,8 +36,28 @@ class Map extends React.Component {
 			.data(data.features)
 			.join('path')
 			.attr('class', 'municipality')
-			.attr('fill', '#C6F4C6')
 			.attr('d', (feature) => pathGenerator(feature))
+			.attr('fill', (d) => {
+				let id = d.properties.id;
+				let productionId = productionData.Data.find(
+					(production) => production.id === id
+				);
+				let sunProduction = productionId.zon;
+				let windProduction = productionId.wind;
+				let bioProduction = productionId.biogas;
+				let production = sunProduction + windProduction + bioProduction;
+				if (production <= 1800) {
+					return '#D6F2D6';
+				} else if (production <= 3600) {
+					return '#A0EFA0';
+				} else if (production <= 5400) {
+					return '#34C13B';
+				} else if (production <= 7200) {
+					return '#20A52C';
+				} else if (production >= 9000) {
+					return '#1E5916';
+				}
+			})
 			.append('title')
 			.text((d) => d.properties.municipality);
 	}
@@ -50,11 +71,21 @@ class Map extends React.Component {
 							this.defaultView = defaultFocus;
 						}}
 						id="municipalityButton"
-						onClick={() => this.setState({ currentData: 'main' })}
+						onClick={() =>
+							this.setState({
+								currentData: 'main',
+							})
+						}
 					>
 						{this.props.FirstButton}
 					</button>
-					<button onClick={() => this.setState({ currentData: 'minor' })}>
+					<button
+						onClick={() =>
+							this.setState({
+								currentData: 'minor',
+							})
+						}
+					>
 						{this.props.SecondButton}
 					</button>
 				</div>
