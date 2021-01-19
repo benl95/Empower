@@ -15,6 +15,7 @@
 
 .columnRanking {
 	font-family: 'Montserrat';
+	font-weight: 700;
 	font-size: 12px;
 	display: flex;
 	flex-direction: column;
