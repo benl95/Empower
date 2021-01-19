@@ -1,5 +1,6 @@
 import React from 'react';
 import { geoMercator, geoPath, select } from 'd3';
+import ScoreBoard from './ScoreBoard';
 import './map.css';
 
 class Map extends React.Component {
@@ -37,6 +38,7 @@ class Map extends React.Component {
 			.join('path')
 			.attr('class', 'municipality')
 			.attr('d', (feature) => pathGenerator(feature))
+			.attr('stroke', '#ffffff')
 			.attr('fill', (d) => {
 				let id = d.properties.id;
 				let productionId = productionData.Data.find(
@@ -45,26 +47,30 @@ class Map extends React.Component {
 				let sunProduction = productionId.zon;
 				let windProduction = productionId.wind;
 				let bioProduction = productionId.biogas;
-				let production = sunProduction + windProduction + bioProduction;
-				if (production <= 1800) {
-					return '#D6F2D6';
-				} else if (production <= 3600) {
-					return '#A0EFA0';
-				} else if (production <= 5400) {
+				let totalProduction =
+					sunProduction + windProduction + bioProduction;
+				if (totalProduction <= 1499) {
+					return '#ABEFAB';
+				} else if (totalProduction <= 2999) {
+					return '#88E588';
+				} else if (totalProduction <= 4499) {
+					return '#5BD85E';
+				} else if (totalProduction <= 5999) {
 					return '#34C13B';
-				} else if (production <= 7200) {
+				} else if (totalProduction >= 7499) {
 					return '#20A52C';
-				} else if (production >= 9000) {
+				} else if (totalProduction >= 9000) {
 					return '#1E5916';
 				}
 			})
 			.append('title')
-			.text((d) => d.properties.municipality);
+			.text((d) => d.properties.id);
 	}
 
 	render() {
 		return (
 			<div className="mapContainer">
+				<ScoreBoard />
 				<div className="buttonContainer">
 					<button
 						ref={(defaultFocus) => {

@@ -1,11 +1,12 @@
 import React from 'react';
-import './app.css';
 import Flevoland from '../data/flevoland.geo.json';
 import FlevolandGemeentes from '../data/flevolandGemeentes.geo.json';
 import ProductionData from '../data/productionFlevoland.json';
 import Map from './Map';
 import Navigation from './Navigation';
 import SideBar from './SideBar';
+import ScoreBoard from './ScoreBoard';
+import './app.css';
 
 class App extends React.Component {
 	render() {
