@@ -6,14 +6,14 @@
 	border: 0;
 }
 
-svg {
+.mapContainer svg {
 	background-color: #edf5fd;
 	padding: 3rem 3rem 3rem 3rem;
 	margin-top: 0.1rem;
 	padding-right: 10rem;
 }
 
-svg .municipality:hover {
+.mapContainer svg .municipality:hover {
 	stroke: white;
 	stroke-width: 1.5px;
 	cursor: pointer;
@@ -50,7 +50,7 @@ svg .municipality:hover {
 }
 
 .buttonContainer button:focus {
-	background-color: #06e520;
+	background-color: #f89976;
 	color: #ffffff;
 	border-radius: 25px;
 	width: 70%;
