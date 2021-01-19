@@ -41,8 +41,8 @@
 }
 
 .navigationContainer button:focus {
-	color: #06e520;
-	border-bottom: 5px solid #06e520;
+	color: #f89976;
+	border-bottom: 5px solid #f89976;
 	font-weight: 700;
 	padding-bottom: 3px;
 }
