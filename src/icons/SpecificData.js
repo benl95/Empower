@@ -343,7 +343,7 @@ function SvgSpecificData2(props) {
 			<use xlinkHref="#specificData2_svg__K" x={198.725} y={370.864} />
 			<path
 				d="M61.57 388.688h16.133a5.942 5.942 0 015.945 5.94v16.126a5.942 5.942 0 01-5.945 5.937H61.57a5.942 5.942 0 01-5.945-5.937v-16.125a5.942 5.942 0 015.945-5.942zm0 0"
-				fill="#3a9e52"
+				fill="#F79F39"
 			/>
 			<use xlinkHref="#specificData2_svg__P" x={100.633} y={414.997} />
 			<use xlinkHref="#specificData2_svg__C" x={112.285} y={414.997} />
@@ -357,7 +357,7 @@ function SvgSpecificData2(props) {
 			/>
 			<path
 				d="M200.137 171.078l64.492 76.805a94.95 94.95 0 01-38.524 20.043zm0 0"
-				fill="#3a9e52"
+				fill="#F79F39"
 			/>
 			<path
 				d="M200.137 171.078V70.816c55.414-.004 100.336 44.887 100.336 100.262 0 31.008-12.07 56.875-35.84 76.805zm0 0"
@@ -386,7 +386,7 @@ function SvgSpecificData2(props) {
 				transform="matrix(.84922 0 0 .84866 237.783 262.66)"
 				fill="none"
 				strokeLinecap="round"
-				stroke="#3a9e52"
+				stroke="#F79F39"
 			/>
 			<use xlinkHref="#specificData2_svg__R" x={87.469} y={499.013} />
 			<use xlinkHref="#specificData2_svg__b" x={97.188} y={499.013} />
