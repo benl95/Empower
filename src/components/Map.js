@@ -1,6 +1,7 @@
 import React from 'react';
 import { geoMercator, geoPath, select } from 'd3';
-import ScoreBoard from './ScoreBoard';
+import ScoreBoardMunicipality from './ScoreBoardMunicipality';
+import ScoreBoardProvince from './ScoreBoardProvince';
 import './map.css';
 
 class Map extends React.Component {
@@ -70,7 +71,11 @@ class Map extends React.Component {
 	render() {
 		return (
 			<div className="mapContainer">
-				<ScoreBoard />
+				{this.state.currentData === 'main' ? (
+					<ScoreBoardProvince />
+				) : (
+					<ScoreBoardMunicipality />
+				)}
 				<div className="buttonContainer">
 					<button
 						ref={(defaultFocus) => {
