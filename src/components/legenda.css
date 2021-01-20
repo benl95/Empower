@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 .legendaContainer {
 	display: flex;
@@ -11,6 +11,7 @@
 }
 
 .legendaTitle h1 {
+	font-family: 'Montserrat';
 	font-size: 16px;
 	font-weight: 400;
 	position: absolute;
