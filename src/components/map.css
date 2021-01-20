@@ -6,11 +6,17 @@
 	border: 0;
 }
 
+.mapContainer {
+	margin-top: 1px;
+}
+
 .mapContainer svg {
-	background-color: #edf5fd;
+	background-color: none;
 	padding: 3rem 3rem 3rem 3rem;
 	margin-top: 0.1rem;
+	padding-top: 7rem;
 	padding-right: 10rem;
+	padding-left: 15rem;
 }
 
 .mapContainer svg .municipality:hover {
