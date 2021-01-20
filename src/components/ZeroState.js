@@ -8,22 +8,21 @@ class ZeroState extends React.Component {
 		return (
 			<div className="textContainer">
 				<h1>Welcome to the page of Empower 2.0</h1>
-				<p margin-bottom="0">
+				<p>
 					To analyse the sustainable energy production of click on the
 					province to display the data
 				</p>
 				<SvgLookIcon viewBox="0 0 200 200" height="200px" fill="#f89976" />
-				<p margin="0" padding="0">
+				<p>
 					To get specified data about the municipalities click on a
 					specific municipality
 				</p>
 				<SvgSpecificIcon
+					className="specificIcon"
 					width="212pt"
-					height="200px"
+					height="170px"
 					stroke="#f89976"
-					viewBox="0 -10 120 170"
-					margin-top="1em"
-					margin-bottom="1em"
+					viewBox="0 -30 120 180"
 				/>
 				<h2>
 					Get inspired to become more <strong>green</strong>
