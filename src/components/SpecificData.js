@@ -6,6 +6,7 @@ class SpecificData extends React.Component {
 	render() {
 		return (
 			<div className="dataContainer">
+				<h1>Flevoland</h1>
 				<SvgSpecificData width={275} height={1000} />
 			</div>
 		);
