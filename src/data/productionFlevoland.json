@@ -1,0 +1,53 @@
+{
+	"Data": [
+		{
+			"id": "Flevoland",
+			"Code": "5",
+			"zon": 569,
+			"biogas": 235,
+			"wind": 8500
+		},
+		{
+			"id": "Lelystad",
+			"Code": "995",
+			"zon": 77,
+			"biogas": 6,
+			"wind": 1203
+		},
+		{
+			"id": "Almere",
+			"Code": "34",
+			"zon": 113,
+			"biogas": 2,
+			"wind": 236
+		},
+		{
+			"id": "Dronten",
+			"Code": "303",
+			"zon": 99,
+			"biogas": 34,
+			"wind": 1089
+		},
+		{
+			"id": "Urk",
+			"Code": "184",
+			"zon": 16,
+			"biogas": 0,
+			"wind": 109
+		},
+		{
+			"id": "Zeewolde",
+			"Code": "50",
+			"zon": 64,
+			"biogas": 99,
+			"wind": 2347
+		},
+		{
+			"id": "Noordoostpolder",
+			"Code": "171",
+			"zon": 209,
+			"biogas": 52,
+			"wind": 3516
+		}
+	]
+}
