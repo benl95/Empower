@@ -1,0 +1,9 @@
+.dataContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.dataContainer svg {
+	display: block;
+	margin: auto;
+}
