@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 .dataContainer {
 	display: flex;
 	flex-direction: column;
@@ -10,5 +12,6 @@
 }
 
 .dataContainer h1 {
+	font-family: 'Montserrat';
 	margin-bottom: 1em;
 }

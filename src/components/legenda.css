@@ -19,6 +19,7 @@
 }
 
 .first {
+	font-family: 'Montserrat';
 	position: absolute;
 	font-size: 12px;
 	left: 10px;
@@ -26,6 +27,7 @@
 }
 
 .second {
+	font-family: 'Montserrat';
 	position: absolute;
 	font-size: 12px;
 	left: 260px;
