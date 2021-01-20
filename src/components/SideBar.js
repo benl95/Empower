@@ -1,5 +1,4 @@
 import React from 'react';
-import ZeroState from './ZeroState';
 import SpecificData from './SpecificData';
 import './sidebar.css';
 
