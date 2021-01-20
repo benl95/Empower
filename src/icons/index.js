@@ -1,5 +1,7 @@
 export { default as Biogasicon } from './Biogasicon'
 export { default as LookIcon3 } from './LookIcon3'
 export { default as SolarIcon } from './SolarIcon'
+export { default as SpecificData } from './SpecificData'
+export { default as SpecificData2 } from './SpecificData2'
 export { default as SpecificIcon } from './SpecificIcon'
 export { default as WindButton } from './WindButton'
