@@ -1,5 +1,6 @@
 import React from 'react';
 import ZeroState from './ZeroState';
+import SpecificData from './SpecificData';
 import './sidebar.css';
 
 class SideBar extends React.Component {
@@ -7,7 +8,7 @@ class SideBar extends React.Component {
 		return (
 			<div className="sidebarContainer">
 				<div className="contentContainer">
-					<ZeroState />
+					<SpecificData />
 				</div>
 			</div>
 		);
