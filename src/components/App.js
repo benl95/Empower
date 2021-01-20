@@ -5,6 +5,8 @@ import ProductionData from '../data/productionFlevoland.json';
 import Map from './Map';
 import Navigation from './Navigation';
 import SideBar from './SideBar';
+import FilterButtons from './FilterButtons';
+import Legenda from './Legenda';
 import './app.css';
 
 class App extends React.Component {
@@ -12,13 +14,15 @@ class App extends React.Component {
 		return (
 			<div className="mainContainer">
 				<Navigation />
+				<FilterButtons />
+				<Legenda />
 				<Map
-					width={870}
-					height={630}
-					FirstButton="Municipalities"
-					SecondButton="Provinces"
-					MainData={FlevolandGemeentes}
-					MinorData={Flevoland}
+					width={600}
+					height={500}
+					FirstButton="Provinces"
+					SecondButton="Municipalities"
+					MainData={Flevoland}
+					MinorData={FlevolandGemeentes}
 					ProductionData={ProductionData}
 				/>
 				<SideBar />
