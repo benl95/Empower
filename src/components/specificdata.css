@@ -1,9 +1,14 @@
 .dataContainer {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 }
 
 .dataContainer svg {
 	display: block;
 	margin: auto;
+}
+
+.dataContainer h1 {
+	margin-bottom: 1em;
 }
