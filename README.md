@@ -35,7 +35,7 @@ In the electricity dataset I will be using the following variables:
 * biogas production
 * id
 
-* Installation guide
+# Installation guide
 
 Navigate to desired directory
 
